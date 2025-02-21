@@ -1,0 +1,209 @@
+body {
+
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px; /* Evita que o conteúdo fique escondido atrás do menu */
+}
+
+#menu {
+    background: rgba(237, 237, 237, 0.8); /* Fundo semi-transparente */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    height: 60px;
+    width: 700px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 24px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona leve sombra */
+}
+
+/* Estilização da logo */
+.menu-logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu-logo img {
+    height: 40px; /* Ajuste conforme o tamanho da sua logo */
+    width: auto;
+}
+
+/* Estilização da navegação */
+.menu-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu-nav li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-nav a {
+    display: block;
+    line-height: 50px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: #111111;
+    font-size: 20px;
+    border-radius: 12px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu-nav a:hover {
+    color: #0099CC;
+    background: #F2F2F2;
+    border-radius: 12px;
+}
+
+/* Botão hambúrguer (menu mobile) */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #111111;
+}
+
+/* Responsividade */
+@media screen and (max-width: 800px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 80px;
+    }
+
+    #menu {
+        width: 90%;
+        max-width: 400px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block; /* Exibe o botão hambúrguer */
+    }
+
+    .menu-nav {
+        display: none; /* Esconde o menu por padrão */
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        background: #444;
+        border-radius: 12px;
+        width: 200px;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-nav ul {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .menu-nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-nav a {
+        padding: 10px;
+        display: block;
+        color: #fff;
+    }
+
+    .menu-nav a:hover {
+        background: #0099CC;
+        color: white;
+    }
+
+    .menu-nav.active {
+        display: block; /* Mostra o menu quando o botão for clicado */
+    }
+}
+ 
+h1{
+    margin-top: 150px;
+    font-size: 96px;
+    text-align: center;
+    .gelasio-<uniquifier> {
+        font-family: "Gelasio", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+}
+    
+      }
+        img {
+            width: 100%; /* Ajusta a largura para ocupar todo o espaço disponível */
+            max-width: 600px; /* Define um tamanho máximo */
+            height: auto 663; /* Mantém a proporção da imagem */
+            display: block; /* Evita espaçamentos indesejados */
+            margin: 0 auto; /* Centraliza a imagem */
+            border-radius: 10px; /* Adiciona bordas arredondadas */
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .item {
+            text-align: center;
+            width: 150px;
+        }
+
+        .item img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .item img:hover {
+            transform: scale(1.1);
+        }
+
+        .caption {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .item {
+                width: 80%;
+            }
+        }
+
