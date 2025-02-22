@@ -160,20 +160,11 @@ h1 {
 
 
 
-/* Estilo das imagens principais */
-img {
-    width: 100%; /* Ajusta a largura para ocupar todo o espaço disponível */
-    max-width: 600px; /* Define um tamanho máximo */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Evita espaçamentos indesejados */
-    margin: 0 auto; /* Centraliza a imagem */
-    border-radius: 10px; /* Borda arredondada */
-}
 /* Estilo para a seção img-ferramentas */
 .img-ferramentas {
     background-color: #333; /* Cor de fundo escura */
     width: 100%; /* Ocupa toda a largura da tela */
-    height: 15vh; /* Ocupa toda a altura da tela */
+    height: 20vh; /* Ocupa toda a altura da tela */
     display: flex;
     justify-content: center; /* Centraliza as imagens horizontalmente */
     align-items: center; /* Centraliza as imagens verticalmente */
@@ -185,7 +176,7 @@ img {
     display: flex;
     flex-wrap: wrap; /* Permite que as imagens se ajustem para várias linhas */
     justify-content: center; /* Centraliza as imagens horizontalmente */
-    gap: 100px; /* Espaçamento entre as imagens */
+    gap: 15px; /* Espaçamento entre as imagens */
 }
 
 /* Estilo para cada item de imagem */
@@ -218,6 +209,3 @@ img {
 .img-item img:hover {
     transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
 }
-
-
-
