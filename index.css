@@ -164,7 +164,7 @@ h1 {
 .img-ferramentas {
     background-color: #333; /* Cor de fundo escura */
     width: 100%; /* Ocupa toda a largura da tela */
-    height: 20vh; /* Ocupa toda a altura da tela */
+    height: 15vh; /* Ocupa toda a altura da tela */
     display: flex;
     justify-content: center; /* Centraliza as imagens horizontalmente */
     align-items: center; /* Centraliza as imagens verticalmente */
