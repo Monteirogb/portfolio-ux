@@ -1,5 +1,5 @@
+/* Estilo do Body */
 body {
-
     font-family: inherit;
     display: flex;
     flex-direction: column;
@@ -7,6 +7,7 @@ body {
     padding-top: 80px; /* Evita que o conteúdo fique escondido atrás do menu */
 }
 
+/* Estilização do Menu */
 #menu {
     background: rgba(237, 237, 237, 0.8); /* Fundo semi-transparente */
     backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
@@ -22,7 +23,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona leve sombra */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Leve sombra */
 }
 
 /* Estilização da logo */
@@ -71,7 +72,7 @@ body {
     border-radius: 12px;
 }
 
-/* Botão hambúrguer (menu mobile) */
+/* Botão hambúrguer (para versão mobile) */
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -81,7 +82,7 @@ body {
     color: #111111;
 }
 
-/* Responsividade */
+/* Responsividade para dispositivos menores */
 @media screen and (max-width: 800px) {
     body {
         margin-left: 0;
@@ -134,76 +135,89 @@ body {
     }
 
     .menu-nav.active {
-        display: block; /* Mostra o menu quando o botão for clicado */
+        display: block; /* Exibe o menu quando o botão for clicado */
     }
 }
- 
-h1{
+
+/* Estilo do título */
+h1 {
     margin-top: 150px;
     font-size: 96px;
     text-align: center;
-    .gelasio-<uniquifier> {
-        font-family: "Gelasio", serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
+    font-family: "Gelasio", serif; /* Correção da sintaxe */
+    font-optical-sizing: auto;
+    font-weight: 700; /* Definir peso da fonte */
 }
-    
-      }
-        img {
-            width: 100%; /* Ajusta a largura para ocupar todo o espaço disponível */
-            max-width: 600px; /* Define um tamanho máximo */
-            height: auto 663; /* Mantém a proporção da imagem */
-            display: block; /* Evita espaçamentos indesejados */
-            margin: 0 auto; /* Centraliza a imagem */
-            border-radius: 10px; /* Adiciona bordas arredondadas */
-        }
+.p1{
+    padding: 0;
+    margin: -50;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Gelasio", serif; /* Correção da sintaxe */
+    font-optical-sizing: auto;
+    font-weight: 700; /* Definir peso da fonte */ 
+}
 
-        .container {
-            text-align: center;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            max-width: 80%;
-        }
 
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
 
-        .item {
-            text-align: center;
-            width: 150px;
-        }
+/* Estilo das imagens principais */
+img {
+    width: 100%; /* Ajusta a largura para ocupar todo o espaço disponível */
+    max-width: 600px; /* Define um tamanho máximo */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Evita espaçamentos indesejados */
+    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 10px; /* Borda arredondada */
+}
+/* Estilo para a seção img-ferramentas */
+.img-ferramentas {
+    background-color: #333; /* Cor de fundo escura */
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 15vh; /* Ocupa toda a altura da tela */
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: center; /* Centraliza as imagens verticalmente */
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
 
-        .item img {
-            width: 100%;
-            border-radius: 5px;
-            transition: transform 0.3s;
-        }
+/* Container das imagens */
+.img-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens se ajustem para várias linhas */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 100px; /* Espaçamento entre as imagens */
+}
 
-        .item img:hover {
-            transform: scale(1.1);
-        }
+/* Estilo para cada item de imagem */
+.img-item {
+    width: 100px; /* Largura fixa para cada imagem */
+    height: 80px; /* Altura fixa */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem dentro do item */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do item */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra leve para o item */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animações de transformação e sombra */
+}
 
-        .caption {
-            margin-top: 8px;
-            font-size: 14px;
-            color: #555;
-        }
+.img-item img {
+    width: 100%; /* Ocupa toda a largura do item */
+    height: 100%; /* Ocupa toda a altura do item */
+    object-fit: cover; /* Garante que a imagem preencha o item sem distorcer */
+    border-radius: 10px; /* Borda arredondada para a imagem */
+    transition: transform 0.3s; /* Animação de transformação para o hover */
+}
 
-        /* Responsividade */
-        @media (max-width: 600px) {
-            .gallery {
-                flex-direction: column;
-                align-items: center;
-            }
-            .item {
-                width: 80%;
-            }
-        }
+/* Efeito de hover para as imagens */
+.img-item:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Aumenta a sombra no hover */
+}
+
+.img-item img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+
 
